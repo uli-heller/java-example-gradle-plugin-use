@@ -8,7 +8,9 @@ apply plugin: 'io.spring.dependency-management'
 group = 'cool.heller.uli'
 version = '0.0.1-SNAPSHOT'
 
-sourceCompatibility = '17'
+java {
+  sourceCompatibility = '17'
+}
 
 repositories {
   mavenCentral()
