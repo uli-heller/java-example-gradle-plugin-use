@@ -36,8 +36,8 @@ plugins {
 }
 ```
 
-Plugin Hosted On Github
------------------------
+Plugin Hosted On Github - Version 4.+
+-------------------------------------
 
 [https://github.com/nebula-plugins/gradle-dependency-lock-plugin - Usage - example](https://github.com/nebula-plugins/gradle-dependency-lock-plugin/wiki/Usage#example)
 
@@ -56,5 +56,26 @@ buildscript {
 }
 apply plugin: 'nebula.dependency-lock'
 
+...
+```
+
+Plugin Hosted On Github - Latest Version 15.+
+---------------------------------------------
+
+[Github - gradle-dependency-lock-plugin](https://github.com/nebula-plugins/gradle-dependency-lock-plugin)
+
+
+```
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.netflix.nebula:gradle-dependency-lock-plugin:15.+'
+    }
+}
+apply plugin: 'com.netflix.nebula.dependency-lock'
 ...
 ```

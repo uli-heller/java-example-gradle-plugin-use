@@ -5,7 +5,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.netflix.nebula:gradle-dependency-lock-plugin:4.+'
+        classpath 'com.netflix.nebula:gradle-dependency-lock-plugin:15.+'
     }
 }
 
@@ -14,7 +14,7 @@ plugins {
   id 'org.springframework.boot' version '3.+'
 }
 
-apply plugin: 'nebula.dependency-lock'
+apply plugin: 'com.netflix.nebula.dependency-lock'
 apply plugin: 'io.spring.dependency-management'
 
 group = 'cool.heller.uli'
