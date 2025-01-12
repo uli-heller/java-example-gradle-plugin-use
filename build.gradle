@@ -1,7 +1,7 @@
 plugins {
   id 'java'
   id 'org.springframework.boot' version '3.+'
-  id "nebula.dependency-lock" version "2.2.4"
+  id "nebula.dependency-lock" version "12.7.1"
 }
 
 apply plugin: 'io.spring.dependency-management'

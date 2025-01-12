@@ -10,6 +10,8 @@ plugins within gradle projects.
 Use Standard Plugins
 --------------------
 
+[Locking Dependency Versions in Gradle](https://jkutner.github.io/2017/03/29/locking-gradle-dependencies.html)
+
 build.gradle:
 
 ```
@@ -20,3 +22,16 @@ plugins {
 
 This is the recommended way to use a plugin. The plugin has to be available
 via the standard plugin portal.
+
+An Updated Version
+------------------
+
+[plugins.gradle.org - nebula.dependency-lock](https://plugins.gradle.org/plugin/nebula.dependency-lock)
+
+build.gradle:
+
+```
+plugins {
+  id("nebula.dependency-lock") version "12.7.1"
+}
+```
