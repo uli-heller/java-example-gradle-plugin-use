@@ -1,0 +1,33 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.netflix.nebula:gradle-dependency-lock-plugin:4.+'
+    }
+}
+
+plugins {
+  id 'java'
+  id 'org.springframework.boot' version '3.+'
+}
+
+apply plugin: 'nebula.dependency-lock'
+apply plugin: 'io.spring.dependency-management'
+
+group = 'cool.heller.uli'
+version = '0.0.1-SNAPSHOT'
+
+java {
+  sourceCompatibility = '17'
+}
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  implementation 'org.springframework.boot:spring-boot-starter-web'
+}

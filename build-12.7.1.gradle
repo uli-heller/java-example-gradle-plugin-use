@@ -1,0 +1,22 @@
+plugins {
+  id 'java'
+  id 'org.springframework.boot' version '3.+'
+  id "nebula.dependency-lock" version "12.7.1"
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+group = 'cool.heller.uli'
+version = '0.0.1-SNAPSHOT'
+
+java {
+  sourceCompatibility = '17'
+}
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  implementation 'org.springframework.boot:spring-boot-starter-web'
+}
